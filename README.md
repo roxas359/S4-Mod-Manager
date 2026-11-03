@@ -1,0 +1,30 @@
+# S4 Mod-Manager
+
+Modpakete für **Die Siedler 4 History Edition** mit **Settlers United** aktivieren, anwenden und jederzeit wieder auf Original zurücksetzen.
+
+## ⬇ Download
+
+**[Neueste Version herunterladen](https://github.com/roxas359/S4-Mod-Manager/releases/latest)** → dort `S4-Mod-Manager.exe` laden.
+
+Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Nach Updates suchen…**
+
+## So geht's
+
+1. `S4-Mod-Manager.exe` in einen eigenen Ordner legen, daneben einen Ordner `MODPACKS` mit den Paketen, die du bekommen hast:
+   ```
+   S4 Mod-Manager\
+     EXE\S4-Mod-Manager.exe
+     MODPACKS\<Paket>
+   ```
+2. Spiel und Settlers-United-Launcher schließen.
+3. Im SU-Launcher die Version **„Lokale Dateien (nur Test)“** wählen – sonst setzt SU die Änderungen beim Start zurück.
+4. Mod-Manager starten (fragt nach Adminrechten, weil er in `C:\Program Files\Settlers United` schreibt).
+   Beim **ersten Start** legt er eine Originalsicherung an – das muss auf einem **unveränderten** Spiel passieren.
+5. Paket links wählen → **Aktivieren →** → **ANWENDEN**. Zurück zum Original: **Alles Original**.
+
+**Mehrspieler:** Alle brauchen dasselbe Paket. Der *Zustands-Code* unten im Fenster muss bei allen gleich sein.
+
+**Virenschutz:** Windows Defender meldet die EXE oder die `version.dll` eines Pakets manchmal fälschlich.
+Hilfe: **☰ Optionen → Virenschutz-Fehlalarm beheben…**
+
+Probleme nach einem Absturz/Desync: **☰ Optionen → Bug-Report kopieren** und im Discord einfügen.

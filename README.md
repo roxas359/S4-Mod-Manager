@@ -4,9 +4,11 @@ Modpakete für **Die Siedler 4 History Edition** mit **Settlers United** aktivie
 
 ## ⬇ Download
 
-**[Neueste Version herunterladen](https://github.com/roxas359/S4-Mod-Manager/releases/latest)** → dort `S4-Mod-Manager.exe` laden.
+### **[⬇ S4-Mod-Manager.exe herunterladen (neueste Version)](https://github.com/roxas359/S4-Mod-Manager/releases/latest/download/S4-Mod-Manager.exe)**
 
-Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Nach Updates suchen…**
+Der Link lädt immer direkt die neueste `S4-Mod-Manager.exe`. Änderungen und Prüfsummen aller Versionen: [Releases](https://github.com/roxas359/S4-Mod-Manager/releases).
+
+Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Nach Updates suchen…** – oder von Hand über **☰ Optionen → Neueste Version von GitHub laden** (bzw. den Link oben): Mod-Manager schließen, alte EXE durch die neue ersetzen, neu starten.
 
 ## 🔍 Updates – was genau passiert
 
@@ -41,4 +43,4 @@ Die angezeigte Zahl muss mit der aus der `.sha256`-Datei des Releases übereinst
 **Virenschutz:** Windows Defender meldet die EXE oder die `version.dll` eines Pakets manchmal fälschlich.
 Hilfe: **☰ Optionen → Virenschutz-Fehlalarm beheben…**
 
-Probleme nach einem Absturz/Desync: **☰ Optionen → Bug-Report kopieren** und im Discord einfügen.
+Probleme nach einem Absturz/Desync: **☰ Optionen → Bug-Report kopieren** und im Discord einfügen. Der Bericht enthält Spiel-/SU-/Mod-Manager-Logs, Windows- und HD-Patch-Absturzberichte und – falls vorhanden – ein Absturzabbild als zweite Datei. Windows-Benutzer-/PC-Name und SU-Kontodaten (E-Mail, Token) werden vorher entfernt; die Datei heißt nach deinem SU-Kontonamen. Damit es Absturzabbilder gibt, schaltet der Mod-Manager dafür einmalig die Windows-Einstellung *LocalDumps* für `S4_Main.exe` ein.

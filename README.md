@@ -8,6 +8,20 @@ Modpakete für **Die Siedler 4 History Edition** mit **Settlers United** aktivie
 
 Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Nach Updates suchen…**
 
+## 🔍 Updates – was genau passiert
+
+- Der Mod-Manager geht **nur** ins Internet, wenn du **Nach Updates suchen…** klickst. Es gibt keine automatische Abfrage beim Start und kein Senden von Daten.
+- Er fragt ausschließlich **dieses Repository** ab (`api.github.com/repos/roxas359/S4-Mod-Manager/releases/latest`) und lädt nur die Datei `S4-Mod-Manager.exe` des neuesten Releases.
+- **Vor** dem Download zeigt er Version, Datum, Größe, die **SHA-256-Prüfsumme** und die Release-Notes, dazu einen Knopf **„Auf GitHub ansehen“**. Ohne deinen Klick auf *Herunterladen* passiert nichts.
+- Nach dem Download prüft er Größe, EXE-Kopf und SHA-256. Passt etwas nicht, wird nichts ersetzt.
+- Die vorige Version bleibt als `S4-Mod-Manager (Vorversion).exe` im Ordner. Jedes Update wird in `MODPACKS\_protokoll.log` eingetragen (von/nach, Prüfsumme, Quelle).
+
+**Selbst nachprüfen:** Jedes Release enthält `S4-Mod-Manager.exe.sha256`. In der Eingabeaufforderung im EXE-Ordner:
+```
+certutil -hashfile S4-Mod-Manager.exe SHA256
+```
+Die angezeigte Zahl muss mit der aus der `.sha256`-Datei des Releases übereinstimmen. Alle bisherigen Versionen mit ihren Änderungen: **[Releases](https://github.com/roxas359/S4-Mod-Manager/releases)**.
+
 ## So geht's
 
 1. `S4-Mod-Manager.exe` in einen eigenen Ordner legen, daneben einen Ordner `MODPACKS` mit den Paketen, die du bekommen hast:
@@ -22,7 +36,7 @@ Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Nach Updates su
    Beim **ersten Start** legt er eine Originalsicherung an – das muss auf einem **unveränderten** Spiel passieren.
 5. Paket links wählen → **Aktivieren →** → **ANWENDEN**. Zurück zum Original: **Alles Original**.
 
-**Mehrspieler:** Alle brauchen dasselbe Paket. Der *Zustands-Code* unten im Fenster muss bei allen gleich sein.
+**Mehrspieler:** Alle brauchen dasselbe Paket. Der **MP-Code** oben im Fenster muss bei allen gleich sein (der *Zustands-Code* enthält zusätzlich Grafik/Sounds und darf abweichen). Das Spiel für den Mehrspieler immer über den **SU-Launcher** starten.
 
 **Virenschutz:** Windows Defender meldet die EXE oder die `version.dll` eines Pakets manchmal fälschlich.
 Hilfe: **☰ Optionen → Virenschutz-Fehlalarm beheben…**

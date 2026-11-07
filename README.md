@@ -8,13 +8,14 @@ Modpakete für **Die Siedler 4 History Edition** mit **Settlers United** aktivie
 
 Der Link lädt immer direkt die neueste `S4-Mod-Manager.exe`. Änderungen und Prüfsummen aller Versionen: [Releases](https://github.com/roxas359/S4-Mod-Manager/releases).
 
-Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Nach Updates suchen…** – oder von Hand über **☰ Optionen → Neueste Version von GitHub laden** (bzw. den Link oben): Mod-Manager schließen, alte EXE durch die neue ersetzen, neu starten.
+Spätere Updates holt der Mod-Manager selbst: **☰ Optionen → Auto-Update…** (lädt und tauscht die EXE nach deiner Bestätigung automatisch) – oder von Hand über **☰ Optionen → Download-Seite auf GitHub öffnen**: Release-Seite prüfen (Herausgeber, Prüfsumme), dort laden, Mod-Manager schließen, alte EXE durch die neue ersetzen, neu starten.
 
 ## 🔍 Updates – was genau passiert
 
-- Der Mod-Manager geht **nur** ins Internet, wenn du **Nach Updates suchen…** klickst. Es gibt keine automatische Abfrage beim Start und kein Senden von Daten.
+- Der Mod-Manager geht **nur** ins Internet, wenn du **Auto-Update…** klickst. „Auto“ heißt: Laden und Austauschen erledigt er selbst – es gibt aber keine automatische Abfrage beim Start und kein Senden von Daten.
 - Er fragt ausschließlich **dieses Repository** ab (`api.github.com/repos/roxas359/S4-Mod-Manager/releases/latest`) und lädt nur die Datei `S4-Mod-Manager.exe` des neuesten Releases.
-- **Vor** dem Download zeigt er Version, Datum, Größe, die **SHA-256-Prüfsumme** und die Release-Notes, dazu einen Knopf **„Auf GitHub ansehen“**. Ohne deinen Klick auf *Herunterladen* passiert nichts.
+- **Vor** dem Download zeigt er Version, Datum, Größe, die **SHA-256-Prüfsumme** und die Release-Notes, dazu einen Knopf **„Auf GitHub ansehen und laden“** (öffnet die Release-Seite, laden tust du dort selbst). Ohne deinen Klick auf *Herunterladen* passiert nichts.
+- Die Prüfsumme wird doppelt abgesichert: die veröffentlichte `.sha256`-Datei und die Prüfsumme, die **GitHub selbst** für die hochgeladene Datei berechnet (auf der Release-Seite unter *Assets*). Widersprechen sie sich, bricht das Update ab.
 - Nach dem Download prüft er Größe, EXE-Kopf und SHA-256. Passt etwas nicht, wird nichts ersetzt.
 - Die vorige Version bleibt als `S4-Mod-Manager (Vorversion).exe` im Ordner. Jedes Update wird in `MODPACKS\_protokoll.log` eingetragen (von/nach, Prüfsumme, Quelle).
 

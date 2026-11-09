@@ -41,6 +41,8 @@ Die angezeigte Zahl muss mit der aus der `.sha256`-Datei des Releases übereinst
 
 **Mehrspieler:** Alle brauchen dasselbe Paket. Der **MP-Code** oben im Fenster muss bei allen gleich sein (der *Zustands-Code* enthält zusätzlich Grafik/Sounds und darf abweichen). Das Spiel für den Mehrspieler immer über den **SU-Launcher** starten.
 
+Meldet die SU-Lobby **„Unterschiedlich: Balancing (BalanceConfigs.zip)“**, obwohl alle dasselbe Paket haben: **☰ Optionen → Balancing prüfen/reparieren…** (ab V179 prüft der Mod-Manager das beim Start, nach ANWENDEN und vor *SPIEL STARTEN* selbst und baut die Datei bei allen byte-gleich).
+
 **Virenschutz:** Windows Defender meldet die EXE oder die `version.dll` eines Pakets manchmal fälschlich.
 Hilfe: **☰ Optionen → Virenschutz-Fehlalarm beheben…**
 
